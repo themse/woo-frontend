@@ -17,6 +17,7 @@ const nextConfig = {
   publicRuntimeConfig: {
     // Will be available on both server and client
     APP_URL: process.env.APP_URL || 'http://localhost:3000',
+    GRAPHQL_SCHEMA_PATH: process.env.GRAPHQL_SCHEMA_PATH,
   },
 };
 module.exports = withPlugins([withBundleAnalyzer], nextConfig);
